@@ -28,9 +28,11 @@ static func _create_block(input: String) -> Dictionary[String, Variant]:
 	var key: String = RegEx.create_from_string(r'\s*\w*').search(input).get_string()
 	
 	var rt: Dictionary[String, Variant] = {}
-	rt.get_or_add(key.to_lower().strip_edges())
+	
 	var val_string: String = input.trim_prefix(key).strip_edges()
 	key=key.to_lower().strip_edges()
+	if key.is_empty(): return rt
+	rt.get_or_add(key)
 	if val_string.is_empty(): return rt
 	elif val_string.is_valid_int(): rt[key]=val_string.to_int()
 	elif val_string.is_valid_float(): rt[key]=val_string.to_float()
