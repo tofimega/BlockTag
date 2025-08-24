@@ -17,7 +17,9 @@ Currently only parses
 - Or another Block:
   - `[block1 [block2 block3 but i am a string actually]]`
 
-An empty Block is called a TAG. In this case the presence (or absence) of a given tag represents a boolean value: `[i_am_true]`
+An empty Block is called a TAG. In this case the presence (or absence) of a given tag represents a boolean value:
+- `[i_am_true]`
+  
 Empty TAGS are ignored:
 
 - `[]` <- this does literally nothing
