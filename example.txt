@@ -1,0 +1,32 @@
+//comments are only for the sake of the example
+//indentation optional
+
+[BLOCK1 //unique name per level
+	[BLOCK1 //this is ok 
+		... //imagine there's content here
+	]
+	[BLOCK1 //this is not
+		...
+	]
+	
+	[TAG] //empty block, its presence reps a boolean value
+	
+	[TEXTBLOCK1 "quo marks \" must be [escaped] "] //valid
+	[TEXTBLOCK2      square "brackets" muste be \] escaped] //valid, leading, trailing whitespaces in value ignored
+	[TEXTBLOCK3 "this is incorrect, because there is no " at the end] //invalid
+
+	[  INTBLOCK 2] //valid
+	[FLOATBLOCK 2.0 ] //valid
+	
+	[SUBBLOCK
+		[BLOCK1
+			newlines are also simple whitespaces //valid
+		]
+	
+	]
+	
+]
+
+[BLOCK2
+	...
+]

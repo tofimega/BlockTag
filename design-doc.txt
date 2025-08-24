@@ -1,0 +1,24 @@
+BlockTag serialization format
+
+Describes a content tree (kinda like json or sexp)
+
+root block is implicitly present
+
+leading, trailing whitespaces are ignored obvs
+
+case-insensitive keys
+
+blocks are encased in [Square braces]
+blocks have a name (one word, leading, trailing spaces ignored)
+after the name are 1 or more whitespaces
+followed by the block's content:
+	another block (starts with [), or
+	an int (only contains digits), or
+	a float (digits + one optional . or ,), or
+	a string (optionally encased in " marks)
+		in this case everything after the first chunk of wspaces is part of the content, including other wspaces
+		if ] is used, encasing in " is necessary
+		however " can freely be used inside the string (even if encased)
+		
+if a block has no content, it is called a tag
+	in this case its presence (or absence) reps a boolean value
