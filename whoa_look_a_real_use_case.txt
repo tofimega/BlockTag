@@ -1,0 +1,40 @@
+//example use case: dialogue system
+
+[START
+	[NOSKIP] //this text cannot be skipped
+	[ICON A.image]
+	[ADVANCE BLOCK2]
+	[TEXT "hey this is the start of the text"] 
+]
+
+[BLOCK2
+	[CHOICER
+		[1
+			[TEXT "the first option"]
+			[ADVANCE BLOCK3]
+			[FLAGADDR "correct_choice"] //picking this option sets global flag "correct choice" to 0
+			[FLAGVAL 0]
+		]
+		[2
+			[TEXT "the second option"]
+			[ADVANCE BLOCK4]
+			[FLAGADDR "correct_choice"]
+			[FLAGVAL 1]
+		]
+	
+	]
+	[TEXT "on the second block you must choose"]
+]
+
+[BLOCK3
+	[AUTOADVANCE] //this text will automatically move on to the next
+	[ADVANCE BLOCK2]
+	[TEXT no]
+
+]
+
+[BLOCK4 //no advance, dialogue ends
+	
+	[TEXT good]
+
+]
