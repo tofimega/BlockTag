@@ -12,8 +12,8 @@ Currently only parses
   - `[whoa_decimal 1.0]`
   - `[commas_are_also_supported 1,0]`
 - A string:
-  - `[s1 "quotation marks need to be \" escaped here"]`
-  - `[s2 square brackets need to be \[ \] escaped here also leading and trailing whitespaces are ignored                     ]`
+  - `[s1 "quotation marks need to be \" escaped"]`
+  - `[s2 square brackets only need to be \[ \] escaped here also leading and trailing whitespaces are ignored                     ]`
 - Or another Block:
   - `[block1 [block2 block3 but i am a string actually]]`
 
