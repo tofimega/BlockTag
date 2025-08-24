@@ -25,4 +25,4 @@ Empty TAGS are ignored:
 - `[]` <- this does literally nothing
 
 
-See example.txt for more details
+See example.txt for more details (note: the format doesn't support comments)
