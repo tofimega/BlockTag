@@ -4,10 +4,10 @@
 	
 	[TAG] 
 	
-	[TEXTBLOCK1 "quo marks \" must be [escaped] "] 
-	[TEXTBLOCK2      square "brackets" muste be \] escaped] 
+	[TEXTBLOCK1 "quo marks \" must always be [escaped] "] 
+	[TEXTBLOCK2      square \"brackets muste be \] escaped] 
 	
-	[  INTBLOCK 2] 
+	[  INTBLOCK  2] 
 	[FLOATBLOCK 2.0 ]
 	[FLOATBLOCK2 2,0 ] 
 	

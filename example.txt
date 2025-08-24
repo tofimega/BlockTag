@@ -11,8 +11,8 @@
 	
 	[TAG] //empty block, its presence reps a boolean value
 	
-	[TEXTBLOCK1 "quo marks \" must be [escaped] "] //valid
-	[TEXTBLOCK2      square "brackets" muste be \] escaped] //valid, leading, trailing whitespaces in value ignored
+	[TEXTBLOCK1 "quo marks \" must always be [escaped] "] //valid
+	[TEXTBLOCK2      square \"brackets\" muste be \] escaped only if there are no quo marks] //valid, leading, trailing whitespaces in value ignored
 	[TEXTBLOCK3 "this is incorrect, because there is no " at the end] //invalid
 
 	[  INTBLOCK 2] //valid
